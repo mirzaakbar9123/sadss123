@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TIMEZONE — zamonaviy soatlar do'koni" />
+    <title>TIMEZONE | Soatlar do'koni</title>
+    <link rel="shortcut icon" href="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=85" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topline">
+      ✦ Barcha buyurtmalarga bepul yetkazib berish — TIMEZONE bilan vaqtni
+      qadrlang ✦
+    </div>
+    <header class="header">
+      <a class="logo" href="#home"
+        ><span class="logo-mark">T</span> TIME<span>ZONE</span></a
+      >
+      <nav class="nav" id="nav">
+        <a class="active" href="#home">Bosh sahifa </a>
+        <a href="#products">Katalog </a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <div class="head-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Qidirish">
+          ⌕
+        </button>
+        <button class="icon-btn bag-btn" id="cartToggle" aria-label="Savatcha">
+          ▶<span id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuToggle" aria-label="Menyu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> VAQT — ENG QIMMAT BOYLIK</div>
+          <h1>Har bir soniyada<br /><em>o'z uslubingni</em> yarat.</h1>
+          <p>
+            Did va aniqlik uyg'unlashgan zamonaviy soatlar kolleksiyasi.
+            O'zingizga mos vaqtni tanlang.
+          </p>
+          <div class="hero-buttons">
+            <a class="primary-btn" href="#products"
+              >Kolleksiyani ko'rish <b>↗</b></a
+            >
+            <a class="text-btn" href="#about">Biz haqimizda <span>→</span></a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>1 000+</strong><small>Model</small></div>
+            <i></i>
+            <div><strong>24/7</strong><small>Yordam</small></div>
+            <i></i>
+            <div><strong>100%</strong><small>Sifat nazorati</small></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-circle"></div>
+          <div class="hero-tag">NEW<br /><b>COLLECTION</b></div>
+          <img
+            src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=85"
+            alt="Hashamatli qo'l soati"
+          />
+          <div class="floating-note">
+            <span>✦</span>
+            <div><b>Timeless style</b><small>Har lahzada nafislik</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div>✧ <span>Premium sifat</span></div>
+        <div>◈ <span>Tez yetkazib berish</span></div>
+        <div>♧ <span>Rasmiy kafolat</span></div>
+        <div>✦ <span>Qulay xarid</span></div>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span></span> BIZNING TANLOV</div>
+            <h2>Mukammal <em>vaqt</em> tanlovi</h2>
+          </div>
+          <p>Har bir lahzaga mos, o'ziga xos dizayndagi soatlar.</p>
+        </div>
+        <div class="toolbar">
+          <div class="categories" id="categories">
+            <button class="cat active" data-category="Barchasi">
+              Barchasi
+            </button>
+            <button class="cat" data-category="Erkaklar">Erkaklar</button>
+            <button class="cat" data-category="Ayollar">Ayollar</button>
+            <button class="cat" data-category="Sport">Sport</button>
+            <button class="cat" data-category="Klassik">Klassik</button>
+          </div>
+          <div class="filters">
+            <label class="searchbox"
+              ><span>⌕</span
+              ><input id="searchInput" placeholder="Soat qidirish..."
+            /></label>
+            <select id="sortSelect" aria-label="Saralash">
+              <option value="featured">Tavsiya etilgan</option>
+              <option value="low">Narx: arzondan</option>
+              <option value="high">Narx: qimmatdan</option>
+              <option value="name">Nomi bo'yicha</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-line">
+          <span id="resultCount">1000 ta mahsulot</span
+          ><span>Yangi kolleksiya · 2026</span>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="pagination-note">
+          Ko'rsatilmoqda: <b id="shownCount">12</b> / 1000 ta mahsulot
+        </div>
+        <button class="load-more" id="loadMore">
+          Yana mahsulotlarni ko'rish <span>↓</span>
+        </button>
+      </section>
+
+      <section class="promo" id="about">
+        <div class="promo-image">
+          <img
+            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=85"
+            alt="Minimalist soat"
+          />
+        </div>
+        <div class="promo-copy">
+          <div class="eyebrow"><span></span> TIMEZONE FALSAFASI</div>
+          <h2>Uslub — bu<br /><em>mayda detallarda.</em></h2>
+          <p>
+            Biz har bir soatni shunchaki aksessuar emas, balki xarakteringizning
+            bir qismi deb bilamiz. Sizga mos dizayn va ishonchli sifatni bir
+            joyga jamladik.
+          </p>
+          <a href="#products" class="primary-btn"
+            >O'z soatingizni toping <b>↗</b></a
+          >
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div>
+          <span>01</span>
+          <h3>Ishonchli sifat</h3>
+          <p>Har bir mahsulot sinchiklab tanlanadi.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Tez yetkazish</h3>
+          <p>Buyurtmangizni qulay vaqtda oling.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Doimiy yordam</h3>
+          <p>Savollaringizga mamnuniyat bilan javob beramiz.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer-main">
+        <div>
+          <a class="logo footer-logo" href="#home"
+            ><span class="logo-mark">T</span> TIME<span>ZONE</span></a
+          >
+          <p>Vaqtingizga munosib uslub.</p>
+        </div>
+        <div>
+          <h4>Bo'limlar</h4>
+          <a href="#home">Bosh sahifa</a><a href="#products">Katalog</a
+          ><a href="#about">Biz haqimizda</a>
+        </div>
+        <div>
+          <h4>Aloqa</h4>
+          <a href="tel:+998900000000">+998 90 000 00 00</a
+          ><a href="mailto:hello@timezone.uz">hello@timezone.uz</a
+          ><span>Toshkent, O'zbekiston</span>
+        </div>
+        <div>
+          <h4>Ijtimoiy tarmoqlar</h4>
+          <a href="https://www.instagram.com/time_zone/?hl=ru">Instagram ↗</a
+          ><a href="www.timezone.com">Telegram ↗</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 TIMEZONE. Barcha huquqlar himoyalangan.
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="drawer-head">
+        <h3>Savatcha <span id="drawerCount">(0)</span></h3>
+        <button id="closeCart">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+          Savatchangiz hozircha bo'sh.<br /><span
+            >Yoqtirgan soatingizni tanlang.</span
+          >
+        </div>
+      </div>
+      <div class="cart-bottom">
+        <div class="total"><span>Jami</span><b id="cartTotal">0 so'm</b></div>
+        <button class="checkout" id="checkout">
+          Buyurtma berish <span>→</span></button
+        ><small>Demo sayt: buyurtma haqiqiy to'lovni amalga oshirmaydi.</small>
+      </div>
+    </aside>
+    <div class="toast" id="toast">Mahsulot savatchaga qo'shildi ✓</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
